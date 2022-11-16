@@ -13,7 +13,7 @@ class TestLogic(unittest.TestCase):
 
     def test_other_player(self):
         self.assertEqual(logic.other_player('X'), 'O')
-        self.assertEqual(logic.other_player('O'), 'O')
+        self.assertEqual(logic.other_player('O'), 'X')
         # self.assertEqual(logic.other_player('X'), 'O')
     
 

@@ -12,20 +12,22 @@ def player():
 def input_X(board):
     x = int(input("Choose a row (1, 2, 3): "))
     y = int(input("Choose a column (1, 2, 3): "))
-    if (x >= 1 or x <= 3) and (y >= 1 or y <= 3):
+    if (x >= 1 or x <= 3) and (y >= 1 or y <= 3) and (board[x-1][y-1] == None):
         board[x - 1][y - 1] = 'X'
         return(board)
     else:
-        input_X()
+        print("Try again. This coordinate out of bounds or already taken.")
+        input_X(board)
 
 def input_O(board):
     x = int(input("Choose a row (1, 2, 3): "))
     y = int(input("Choose a column (1, 2, 3): "))
-    if (x >= 1 or x <= 3) and (y >= 1 or y <= 3):
+    if (x >= 1 or x <= 3) and (y >= 1 or y <= 3) and (board[x-1][y-1] == None): 
         board[x - 1][y - 1] = 'O'
         return(board)
     else:
-        input_O()
+        print("Try again. This coordinate out of bounds or already taken.")
+        input_O(board)
 
 if __name__ == '__main__':
     board = make_empty_board()
