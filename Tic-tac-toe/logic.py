@@ -8,6 +8,11 @@ def make_empty_board():
         [None, None, None]
     ]
 
+def print_board(board):
+    """Prints the board"""
+    for row in board:
+        print(row)
+
 def get_winner(board):
     """Determines the winner of the given board.
     Returns X, O, or None"""
@@ -37,8 +42,7 @@ def get_winner(board):
         winner = board[0][2]
         return(winner)
     else:
-        draw = "None"
-        return(draw)
+        return(None)
 
 def other_player(player):
     """Given the character for a player, return the other player"""
