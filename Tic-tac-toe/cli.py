@@ -33,7 +33,17 @@ if __name__ == '__main__':
     board = make_empty_board()
     winner = None
     
-    player1 = input("Player 1, choose a character (X or O): ")
+    # single or multi-player
+    # if single player
+    #   then player chooses X (first) or O (second)
+    # bot is whatever player does not choose (use other_player)
+
+    # else if multi-player
+    #   
+
+
+    # Allow user to choose X or O
+    player1 = input("Choose a character (X or O): ")
     player2 = ""
     if player1 == 'X' or player1 == 'x':
         player1 = 'X'
@@ -42,13 +52,14 @@ if __name__ == '__main__':
         player1 = 'O'
         player2 = 'X'
 
+    # Let user know which character the selected
     print("Player 1 is " + player1)
     print("Player 2 is " + player2)
     player = player1
 
     while winner == None:
         print("TODO: take a turn!")
-
+        
         # TODO: Show the board to the user
         print_board(board)
 
