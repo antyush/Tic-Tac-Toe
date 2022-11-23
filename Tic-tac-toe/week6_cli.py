@@ -53,7 +53,6 @@ if __name__ == '__main__':
         else: # single player
             if new_game.player == 'X':
                 new_game.bot = new_game.other_player(new_game.player)
-                print('Player is X, and Computer is O')
                 print('\nWe are taking a move from X')
                 input_move(new_game.board)
                 new_game.winner = new_game.get_winner()
@@ -70,7 +69,6 @@ if __name__ == '__main__':
                     break
             else:
                 new_game.bot = new_game.other_player(new_game.player)
-                print('Computer is X, and Player is O')
                 print('\nWe are taking a move from X')
                 new_game.bot_action()
                 new_game.winner = new_game.get_winner()
@@ -86,8 +84,8 @@ if __name__ == '__main__':
                     print(new_game.player + " is the winner!")
                     break
 
-            print('\n Updated Board!')
-            new_game.print_board()
+        print('\n Updated Board!')
+        new_game.print_board()
             
         if mode == '2': # if multiplayer, switch player
             new_game.player = new_game.other_player(new_game.player)

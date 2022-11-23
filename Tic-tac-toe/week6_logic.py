@@ -33,10 +33,8 @@ class Week6_TicTacToe:
     def multi_player(self):
         player1 = input("Choose a character (X or O): ")
         self.player = player1
-        # print("Player 1: ", player1)
         player2 = None
         player2 = self.other_player(player1)
-        print("Player 2 = ", player2)
 
     def print_board(self):
         """Prints the board"""
@@ -74,7 +72,6 @@ class Week6_TicTacToe:
             return(None)
 
     def other_player(self, current_player):
-        print("Player in other player function = ", current_player)
         """Given the character for a player, return the other player"""
         if current_player == 'X':
             return('O')
