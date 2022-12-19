@@ -1,6 +1,6 @@
 # This is the main file
 
-from week6_logic import Week6_TicTacToe
+from week6_logic import Week6_TicTacToe, Game_Data
 
 # function to input a users move on the board
 def input_move(board):
