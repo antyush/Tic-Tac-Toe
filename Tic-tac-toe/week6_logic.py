@@ -60,10 +60,6 @@ class Game_Data:
         self.save()
         return True
 
-    # return all of the games
-    def all(self):
-        return self.games
-
     # Return a game based on the ID it has been assigned
     def game_by_id(self, game_id):
         return self.games[self.games["game_id"] == game_id]
@@ -81,6 +77,10 @@ class Game_Data:
     # Save the DataFrame to the CSV file
     def save(self):
         self.games.to_csv(self.path)
+
+    # return all of the games
+    def all(self):
+        return self.games
 
 
 class Week6_TicTacToe:
