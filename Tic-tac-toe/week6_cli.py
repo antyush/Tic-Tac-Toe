@@ -2,6 +2,7 @@
 
 from week6_logic import Week6_TicTacToe
 
+# function to input a users move on the board
 def input_move(board):
     x = int(input("Choose a row (1, 2, 3): "))
     y = int(input("Choose a column (1, 2, 3): "))
