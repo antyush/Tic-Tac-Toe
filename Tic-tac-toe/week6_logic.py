@@ -73,10 +73,9 @@ class Game_Data:
         total = len(games)
         if total == 0:
             return {
-                "total_games": 0,
-                "human_wins": 0,
-                "bot_wins": 0,
-                "win_percentages": {"human": 0, "bot": 0},
+                "total": 0,
+                "player_wins": 0,
+                "bot_wins": 0
             }
 
     # Save the DataFrame to the CSV file
